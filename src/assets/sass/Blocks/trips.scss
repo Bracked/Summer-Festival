@@ -1,0 +1,40 @@
+.trips {
+    padding: 75px 0;
+    background-color: var(--color-seance);
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 15px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -22px;
+            width: 7px;
+            height: 100%;
+            background-color: #fff;
+
+        }
+    }
+
+    &__title {
+        color: var(--color-white);
+        font-family: "Raleway";
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        margin-top: 20px;
+        color: var(--color-white);
+        font-family: Raleway;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

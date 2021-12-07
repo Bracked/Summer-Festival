@@ -1,0 +1,90 @@
+.new {
+    padding: 99px 0;
+    background-color: var(--color-seance);
+    &__container {
+
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 100px;
+        }
+    }
+
+    &__imgBox {
+        margin-left: -14px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        color:var(--color-white);
+        font-family: "Raleway";
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 33.24px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        color:var(--color-white);
+        font-family: "Raleway";
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 24.93px;
+    }
+
+
+}
+
+.triangle {
+    display: inline-block;
+
+    &,
+	&::before,
+	&::after {
+		width: 30px;
+		height: 30px;
+        transform: rotate(135deg);
+	}
+
+	position: relative;
+	overflow: hidden;
+	transform: translateY(50%) rotate(30deg) skewY(30deg) scaleX(0.866);
+	pointer-events: none;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		background: white;
+		pointer-events: auto;
+	}
+
+	&::before {
+		// prettier-ignore
+		transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(30deg) scaleY(0.866) translateX(-24%);
+	}
+
+	&::after {
+		// prettier-ignore
+		transform: scaleX(1.155) skewY(-30deg) rotate(-30deg) translateY(-42.3%) skewX(-30deg) scaleY(0.866) translateX(24%);
+	}
+
+	
+		border-radius: 20%;
+
+		&::before {
+			border-radius: 20% 20% 20% 55%;
+		}
+
+		&::after {
+			border-radius: 20% 20% 55% 20%;
+		}
+}   
+

@@ -1,0 +1,58 @@
+.projects {
+    padding: 115px 0 ;
+
+
+    &__list {
+
+        & * + * {
+            margin-top: 45px;
+        }
+     }
+
+
+    
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    &__date {
+        color:var(--color-white);
+        font-family: "Raleway";
+        font-size: 17px;
+        font-weight: 700;
+
+    }
+
+    &__title {
+        margin-top: 20px;
+
+        color:var(--color-white);
+        font-family: "Raleway";
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-top: 50px;
+
+        color:var(--color-white);
+        font-family: "Raleway";
+        font-size: 17px;
+        font-weight: 400;
+        max-width: 360px;
+    }
+
+    &--reverse .article__start {
+        order: 2;
+    }
+
+    &__imgBox {
+        max-width: 570px;
+    }
+
+
+}
